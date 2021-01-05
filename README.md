@@ -6,6 +6,6 @@ A very simple date web component
 <am-calendar id="calc"></am-calendar>
 ```
 
-![alt text](https://github.com/ranjanngc/am-calendar/blob/main/static/cal-dark.png?raw=true)
+![alt text](https://github.com/ranjanngc/am-calendar/blob/main/static/cal-dark.PNG?raw=true)
 
-![alt text](https://github.com/ranjanngc/am-calendar/blob/main/static/cal.png?raw=true)
+![alt text](https://github.com/ranjanngc/am-calendar/blob/main/static/cal.PNG?raw=true)
