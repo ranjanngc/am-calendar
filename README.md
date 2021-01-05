@@ -17,7 +17,7 @@ npm i
 ```
 
 Run Demo application
-``
+```
 npm run start
 ```
 
