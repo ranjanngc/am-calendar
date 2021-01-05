@@ -23,5 +23,5 @@ npm run start
 
 Build
 ```
-nom run docs:build
+npm run docs:build
 ```
