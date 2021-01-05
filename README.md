@@ -9,7 +9,7 @@ A very simple calendar web component
 ![alt text](https://github.com/ranjanngc/am-calendar/blob/main/static/cal-dark.PNG?raw=true)
 
 ```html
-<am-calendar id="calc" theme="dark"></am-calendar>
+<am-calendar id="calc"></am-calendar>
 ```
 
 ![alt text](https://github.com/ranjanngc/am-calendar/blob/main/static/cal-soft.PNG?raw=true)
