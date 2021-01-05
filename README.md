@@ -1,5 +1,5 @@
 # am-calendar
-A very simple date web component
+A very simple calendar web component
 
 ## Uses
 ```html
