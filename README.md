@@ -3,13 +3,13 @@ A very simple calendar web component
 
 ## Uses
 ```html
-<am-calendar id="calc" theme="dark"></am-calendar>
+<am-calendar theme="dark"></am-calendar>
 ```
 
 ![alt text](https://github.com/ranjanngc/am-calendar/blob/main/static/cal-dark.PNG?raw=true)
 
 ```html
-<am-calendar id="calc"></am-calendar>
+<am-calendar></am-calendar>
 ```
 
 ![alt text](https://github.com/ranjanngc/am-calendar/blob/main/static/cal-soft.PNG?raw=true)
