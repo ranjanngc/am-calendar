@@ -19,6 +19,8 @@ A very simple calendar web component
 
 ### HTML
 ```html
+<script type="module" language="text/javascript" src="public/am.calendar.js"></script>  
+
 <am-calendar id="calc"></am-calendar>
 ```
 ### JS
