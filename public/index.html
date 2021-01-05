@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="module" language="text/javascript" src="am.calendar.js"></script>   
+    </head>
+    <body>
+        <h3>am-calendar demo</h3>
+        <hr/>
+        <code>
+            &lt;am-calendar&gt;&lt;/am-calendar&gt;
+            <span id="r1"></span>
+        </code>
+        <br /><hr/>
+        <am-calendar id="calc"></am-calendar>
+        <hr/>
+        <code>
+            &lt;am-calendar theme="dark"&gt;&lt;/am-calendar&gt;
+            <span id="r2"></span>
+        </code>
+        <br /><hr/>
+        <am-calendar id="calcdark" theme="dark"></am-calendar>
+    </body>
+    <script>
+        var r1 = document.getElementById("r1");
+        var r1 = document.getElementById("r1");
+
+        function handle(ev){
+            r1.innerHTML = "year:" + ev.detail.data.year + " month:" + ev.detail.data.month + " day:" + ev.detail.data.day;
+        }
+
+        var d = document.getElementById("calc");
+        d.addEventListener("am-change",handle);
+
+        function handleDark(ev){
+            r2.innerHTML = "year:" + ev.detail.data.year + " month:" + ev.detail.data.month + " day:" + ev.detail.data.day;
+        }
+        
+        var d = document.getElementById("calcdark");
+        d.addEventListener("am-change",handleDark);
+    </script>
+</html>
