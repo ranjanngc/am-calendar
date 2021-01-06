@@ -41,7 +41,7 @@ Start with installing dependencies
 npm i
 ```
 
-Try the demo add by running dev server
+Try the demo app by running dev server
 ```
 npm run start
 ```
