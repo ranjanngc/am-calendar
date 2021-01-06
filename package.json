@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "docs:build -watch & http-server -S -C cert.pem",
-    "docs:build": "rollup -c --file public/am.calendar.js"
+    "start": "http-server -S -C cert.pem",
+    "build": "rollup -c --file public/am.calendar.js"
   },
   "author": "",
   "license": "ISC",

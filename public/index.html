@@ -2,9 +2,61 @@
 <html>
     <head>
         <script type="module" language="text/javascript" src="am.calendar.js"></script>   
+        <style>
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+              text-align: center;
+            }
+            
+            /* Modal Content */
+            .modal-content {
+              background-color: #fefefe;
+              
+              border: 1px solid #888;
+              width: 360px;
+              margin:0 auto;
+            }
+            
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            </style>
     </head>
     <body>
         <h3>am-calendar demo</h3>
+        <hr/>
+        <br /><hr/>
+        <label for="inptDate">Click on this input to open the calendar inside a modal: </label>  <input type="text" placeholder="mm/dd/yyyy" id="inptDate">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <am-calendar id="calcmodal" theme="dark"></am-calendar>
+            </div>
+
+        </div>
         <hr/>
         <code>
             &lt;am-calendar&gt;&lt;/am-calendar&gt;
@@ -37,5 +89,30 @@
         
         var d = document.getElementById("calcdark");
         d.addEventListener("am-change",handleDark);
+        
+        //Modal
+        var modal = document.getElementById("myModal");
+        var inptDate = document.getElementById("inptDate");
+
+        // When the user clicks the button, open the modal 
+        inptDate.onclick = function() {
+            modal.style.display = "block";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function setDate(ev){
+            var dt = ev.detail.data.month + "/" + ev.detail.data.day + "/" + ev.detail.data.year  ;
+            inptDate.value = dt;
+            modal.style.display = "none";
+        }
+
+        var calcmodal = document.getElementById("calcmodal");
+        calcmodal.addEventListener("am-change",setDate);
     </script>
 </html>

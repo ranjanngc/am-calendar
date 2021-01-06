@@ -217,9 +217,10 @@ const Z=new WeakMap,tt=(st=t=>s=>{const i=Z.get(s);if(void 0===t&&s instanceof $
         .grid-months>div:hover{background:var(--day-start-col);color:var(--bg);cursor:pointer;}
         .hide{display:none}
         .fixed{overflow: auto; height:200px;}
+        .disp{text-align:left;}
         `}render(){return N`<div class="calendar-wrapper ${this.theme}">
         <div class="grid-header">
-            <div>
+            <div class="disp">
                 <span @click="${this._showMonths}" class="m">${this._months[this._currMonth-1]}</span> <span @click="${this._showYears}" class="y">${this._currYear}</span>
             </div>
             <div class="grid-action">
