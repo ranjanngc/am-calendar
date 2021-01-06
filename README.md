@@ -34,18 +34,18 @@ var cal = document.getElementById("calc");
 cal.addEventListener("am-change",handle);
 ```
 
-## Work
-Install dependencies
+## Contribution
+
+Start with installing dependencies
 ```
 npm i
 ```
 
-Run Demo application
+Try the demo add by running dev server
 ```
 npm run start
 ```
-
-Build
+Contribute, test and build
 ```
-npm run docs:build
+npm run build
 ```
